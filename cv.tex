@@ -1,0 +1,266 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%% https://ko.overleaf.com/articles/suman-navaratnarajahs-resume-electronic-engineer/txgcyphkbmgf
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+\usepackage{kotex}
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+%\usepackage[scale=0.8]{geometry}
+ \usepackage[left=2cm, right=2cm, top=1.7cm]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+\usepackage{fontawesome} 
+\usepackage{etoolbox}
+
+% personal data
+\name{Kim Ye Ryeong}{} 
+
+% \address{28, Rue Marcelin Berthelot, 92120 - Montrouge - France}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+% \phone[mobile]{+33768149269}      % optional, remove / comment the line if not wanted
+%\phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{bluemonster@pusan.ac.kr}                               % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+\social[github]{icarusicarus}
+\homepage {1carus.tistory.com}
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle 
+\vspace{-20pt}
+
+%==============education===============================
+\section{Education}
+\vspace{2pt}
+\begin{itemize}
+    \item \textbf{Pusan National University}\hfill \emph{Mar 2017 - Current}\\
+    B.S in Computer Science and Engineering
+    \vspace{4pt}
+\end{itemize}
+
+
+%=================work====================================
+\section{Work}
+\vspace{2pt}
+\begin{itemize}
+\item \textbf{PNU CAMEL lab.}\hfill \emph{August 2021 - Current}\\
+Path Planning, Mapping Undergraduate Student
+\vspace{2pt}
+    \begin{itemize}
+        \item Researched a robot path planning and mapping.
+    \end{itemize}
+\vspace{10pt}
+\item \textbf{Daydream lab.}\hfill \emph{June 2021 - August 2021}\\
+Web Full Stack Developer Intern
+\vspace{2pt}
+    \begin{itemize}
+        \item Developed a process management service on the web.
+    \end{itemize}
+\vspace{10pt}
+\item \textbf{UXIS}
+{\href{https://github.com/SpaHeron/SpaHeron_MachineLearning_UXIS}{\faGithub}} \hfill \emph{March 2021 - June 2021}\\
+Deep Learning RnD Intern 
+\vspace{2pt}
+    \begin{itemize}
+        \item Developed an algorithm for calculating concentration through eye tracking.
+        \item Using Pyhton, OpenCV and Google Mediapipe
+    \end{itemize}
+\vspace{10pt}
+\end{itemize}
+
+
+
+
+%============project=======================================
+\section{Project}
+\vspace{2pt}
+\begin{itemize}
+\item \textbf{Hexapod that Grow Plants} {\href{https://github.com/icarusicarus/plant-robot}{\faGithub}}  {\href{https://pusanackr-my.sharepoint.com/:v:/g/personal/bluemonster_pusan_ac_kr/Eb8zPzRfwlZAlWk5xO0ZsIcBkkQZ0m3yC0fhmJDgrOtDdw?e=xsVmnA}{\faFileText}}\hfill \emph{October 2021 - December 2021}
+
+
+\vspace{2pt}
+    \begin{itemize}
+        \item Developed a hexapod that checks the temperature, humidity, and illuminance of plants with an app and allows them to walk.
+        \item Dynamixel motors and OpenCR were used for Hexapod and  designed the hardware and assembled the hardware of the hexapod with a 3D printer.
+        \item Communicated with sensors using STM32F107.
+        \item Tech Stack: Embedded Systems, Dynamixel SDK, OpenCR, STM32F107, C
+    \end{itemize}
+\vspace{10pt}
+
+\item \textbf{Doctor Who Christmas Tree} {\href{https://github.com/icarusicarus/doctorwho-christmas-tree}{\faGithub}} \hfill \emph{December 2021}
+
+
+\vspace{2pt}
+    \begin{itemize}
+        \item Developed a moving Christmas tree by parody of "The Christmas Invention" in Doctor Who Season 2.
+        \item Tech Stack: Embedded Systems, µC/OS-III, STM32F429ZI, C
+    \end{itemize}
+\vspace{10pt}
+
+\item \textbf{CafeMate: Local coffee shops integrated gifticon service} {\href{https://github.com/icarusicarus/CafeMate}{\faGithub}}  {\href{https://pusanackr-my.sharepoint.com/:p:/g/personal/bluemonster_pusan_ac_kr/EUW1tQGH2VRBlWtD27cN2cYB5eE7GnuQXf8vIzNr-dSm5Q?e=417KoO}{\faFileText}}\hfill \emph{September 2021 - October 2021}
+
+
+\vspace{2pt}
+    \begin{itemize}
+        \item Developed a local coffee shops integrated gifticon service app so that non-franchise cafes can generate profits through gifticon services.
+        \item Won the 3rd Prize in PNU AI Opensource SW Hackathon.
+        \item Tech Stack: Flutter, Docker, NodeJS, PostgreSQL
+    \end{itemize}
+\vspace{20pt}
+
+\item \textbf{Control Flow Integrity Enforcement for Embedded Systems}   {\href{https://pusanackr-my.sharepoint.com/:b:/g/personal/bluemonster_pusan_ac_kr/EQxELibrCWxMuIfjIAvG5SYBJ9M2-TTErSIKZzHHeBNYmA?e=qcDmoR}{\faFileText}}\hfill \emph{May 2021 - October 2021}
+
+
+\vspace{2pt}
+    \begin{itemize}
+        \item Developed a binary instrumentation framework enforcing lightweight control flow integrity (CFI) for embedded systems using ARM TrustZone-M
+        \item Tech Stack: Embedded Systems, STM32 Nucleo L552ZE, Binary Rewriting, C, Python
+    \end{itemize}
+\vspace{10pt}
+
+
+\item \textbf{Korean Scheme Interpreter}   {\href{https://github.com/icarusicarus/CrazyRichWeekendFarm}{\faGithub}}\hfill \emph{Apr 2021 - May 2021}
+
+
+\vspace{2pt}
+    \begin{itemize}
+        \item For more accessible coding education, created a Korean Scheme.
+        \item Developed Korean Scheme Interpreter and VSCode Extension to use it.
+        \item Tech Stack: Compiler, Interpreter, Python, YoCode.
+    \end{itemize}
+\vspace{10pt}
+
+\item \textbf{Service to crack down Sexually Exploitative Materials (SEM)}   {\href{https://pusanackr-my.sharepoint.com/:b:/g/personal/bluemonster_pusan_ac_kr/EdW7coh6YR1BvD8PenUiuKQBuqfRu3ExEEYOU2xHwNa7ww?e=C4JZ3b}{\faFileText}}\hfill \emph{Aug 2020 - Dec 2020}
+
+\vspace{2pt}
+    \begin{itemize}
+        \item Developed web services and programs to support victims of sex crimes and help police investigate as a Best of the Best Digital Forensic project.
+        \item Designed and proceeded the project as a \textbf{Project Manager} and selected as an excellent project.
+        \item Tech Stack: Python, NodeJS, MySQL.
+    \end{itemize}
+\vspace{10pt}
+
+\item \textbf{Mole Game on FPGA }\hfill\emph{Dec 2019}
+\vspace{2pt}
+    \begin{itemize}
+        \item Developed Mole Game that a input key that matches the LED mole within the time limit to increase score.
+        \item Tech Stack: Verilog, flowrian(a digital logic design tool).
+    \end{itemize}
+\vspace{10pt}
+
+\item \textbf{Smart Medicine Case}\hfill\emph{Jun 2019}
+\vspace{2pt}
+    \begin{itemize}
+        \item Developed SMC that can set an alarm for the time to take medicine, and warning alarm at front door when don't take the SMC.
+        \item Won the 2nd Prize in PNU Arduino Project.
+        \item Tech Stack: Arduino.
+    \end{itemize}
+\vspace{10pt}
+\end{itemize}
+
+%============Extracurricular activities=======================================
+\section{Extracurricular activities}
+\vspace{2pt}
+\begin{itemize}
+
+\item \textbf{Completed Coursera 'Neural Netwroks and Deep Learning' course} \hfill \emph{Apr 2020}
+\vspace{10pt}
+
+\item \textbf{Best of the Best 9th}\hfill \emph{July 2020 - Feb 2021}
+    \vspace{2pt}
+    \begin{itemize}
+        \item Funded by KITRI(Korea Infomation Technology Resarch Institute). 
+        \item Completed Digital Forensic track.
+    \end{itemize}
+\vspace{10pt}
+
+\end{itemize}
+
+%============Awards and Skills=======================================
+\section{Awards and Skills}
+\vspace{2pt}
+\begin{itemize}
+
+\item \textbf{Awards}
+    \vspace{2pt}
+    \begin{itemize}
+        \item 3th Prize, PNU AI Opensource SW Hackathon \hfill \emph{2021}
+        \item 2nd Prize, PNU Arduino Project \hfill \emph{2019}
+    \end{itemize}
+\vspace{10pt}
+
+\item \textbf{Papers}
+    \vspace{2pt}
+    \begin{itemize}
+        \item "Suggestion of Open Chat Room Investigation using Logging Bot", KDFS \hfill \emph{2020}
+    \end{itemize}
+\vspace{10pt}
+
+\item \textbf{Skills}
+    \vspace{2pt}
+    \begin{itemize}
+        \item Programming Language: \textbf{Python}, C/C++, Java
+        \item OS : \textbf{Linux, Windows} 
+        \item Web/App : NodeJS, MySQL, React, Flutter
+        \item Modeling : Fusion360, AutoCAD
+        \item Good at Python programming and Web Server side programming.
+        \item Have experience in using EnCase, FTK and various forensic tools.
+    \end{itemize}
+\vspace{10pt}
+
+\end{itemize}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%-----       letter       ---------------------------------------------------------
+
+\end{document}
+
+
+%% end of file `template.tex'.
